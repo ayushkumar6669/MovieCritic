@@ -58,7 +58,9 @@ const MoviePage: React.FC = () => {
     <div style={{ paddingLeft: "20px", paddingRight: "20px" }}>
       {selectedMovie && (
         <Flex justify="space-between" align="center">
-          <Title level={3}>{selectedMovie.name}</Title>
+          <Title level={3} style={{ margin: "0" }}>
+            {selectedMovie.name}
+          </Title>
           <div
             style={{
               display: "flex",

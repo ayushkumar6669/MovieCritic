@@ -65,7 +65,7 @@ const ReviewForm: React.FC<ReviewFormProps> = ({
           <Input />
         </Form.Item>
         <Form.Item name="rating" label="Rating" rules={[{ required: true }]}>
-          <InputNumber max={10} style={{ width: "100%" }} />
+          <InputNumber min={0} max={10} style={{ width: "100%" }} />
         </Form.Item>
         <Form.Item
           name="comments"
